@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+
+<head>
+
+	<meta charset="utf-8" />
+	<title>slowicki.com</title>
+	<meta name="description" content="Co chcesz wiedzieć o mnie" />
+	<meta name="keywords" content="Słowicki" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		
+		<script type="text/javascript">
+		
+			var numer = Math.floor(Math.random()*15)+1;
+
+			function  schowaj()
+			{
+				$("#okno").fadeOut(500);
+			}
+			
+			
+		
+			function zmienslajd()
+			{
+				numer++; if (numer>15) numer=1;
+				
+				var plik = "<img src=\"foty/slajd" + numer + ".png\" />";
+				
+				document.getElementById("okno").innerHTML = plik;
+				$("#okno").fadeIn(500);
+				
+				
+				setTimeout("zmienslajd()", 5000);
+				setTimeout("schowaj()", 4500);
+			
+			}
+			
+		</script>
+
+
+</head>
+
+
+<body onload="zmienslajd()">
+
+<div id="container">
+
+<div id="logo">
+	Poznaj mnie!
+</div>	
+<div id="menu">
+	<a href="index.html" class="hiper"> <div class="option">Główna 	 </div> </a>
+	<a href="cpi.html" class="hiper"> <div class="option">Co potrafię i czego się uczę	</div> </a>
+	<a href="https://www.youtube.com/user/MiroslawZelent/playlists?sort=dd&view=50&shelf_id=35" target="+blank" class="hiper"> <div class="option">Playlista MZ	</div> </a>
+	<a href="http://miroslawzelent.pl" target="_blank" class="hiper"> <div class="option">Mój idol Mirosław Zelent </div> </a>
+	<a href="https://www.instagram.com/sniezalezny/" target="_blank" class="hiper"> <div class="option">Instagram </div> </a>
+	<div style="clear:both;"></div>
+</div>	
+
+<div id="topbar">
+	<div id="topbarL">
+		<img src="s.png" />
+	</div>
+	<div id=topbarR">
+	<span class="bigtitle">  więcej niż 001111101000 słów.. </span>
+	<div style="height: 15px;"></div>
+	Chciałbym pokazać Państwu kilka zdjęć, które w pewien sposób opisują mnie, moje zainteresowania i moje życie. Po więcej fotografii można sięgnąć zerkając na mój instagram do, którego można przejść wybierając odpowiednią opcje w menu na stronie internetowej. #młodywolnyprogramista #celebrujeswójżywotnażywo
+	
+	</div>
+	<div style="clear:both;"></div>
+</div>	
+
+<div id="sidebar">
+	<a href="index.html" class="hiper"> <div class="optionL">Główna 	 </div> </a>
+	<a href="cpi.html" class="hiper"> <div class="optionL">Co PIZSU	</div> </a>
+	<a href="https://www.youtube.com/user/MiroslawZelent/playlists?sort=dd&view=50&shelf_id=35" target="+blank" class="hiper"> <div class="optionL">Playlista MZ	</div> </a>
+	<a href="http://miroslawzelent.pl" target="_blank" class="hiper"> <div class="optionL">Mój idol MZ </div> </a>
+	<a href="https://www.instagram.com/sniezalezny/" target="_blank" class="hiper"> <div class="optionL">Instagram </div> </a>
+	<a href="cv ss18.pdf" target="_blank" class="hiper"> <div class="optionL">MOJE CV </div> </a>
+	<a href="http://terakowski.pl/poczet.htm" target="_blank" class="hiper"> <div class="optionL">Nietypowy fakt </div> </a>
+	<a href="https://github.com/szymons97" target="_blank" class="hiper"> <div class="optionL">GitHub </div> </a>
+	<a href="slajder.html" class="hiper"> <div class="optionL">Zdjęcia	</div> </a>
+	<div style="clear:both;"></div>
+</div>
+
+<div id="okno">
+	
+	<div style="float: left;"></div>
+	
+</div>
+
+<div id="footer">
+	 autor:  Szymon Słowicki. Wszelkie prawa zastrzeżone &copy. kontakt ze mną -  szymon.slowicki@gmail.com
+</div>
+
+</div>	
+	
+</body>
+</html>
